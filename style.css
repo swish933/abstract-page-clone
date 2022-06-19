@@ -25,18 +25,22 @@
     justify-content: space-between;
     align-items: center;
     padding: 1.2em .8em;
+}
 
+.mobile_nav>.mobile_nav_left {
+    margin-bottom: 0.5rem;
 }
 
 .mobile_nav_left .logo {
-    width: 138px;
+    width: 10rem;
     padding-right: 0.7em;
 }
 
 .mobile_logo_container {
     display: flex;
     align-items: center;
-    width: 18rem;
+    width: 100%;
+    outline: 3px solid crimson;
 }
 
 .mobile_logo_container a {

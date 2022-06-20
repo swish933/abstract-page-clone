@@ -69,6 +69,7 @@
 
 .mobile_nav_right>svg:hover {
     transform: scale(1.2);
+
 }
 
 .mobile_menu {
@@ -139,11 +140,14 @@
 .nav_open .hamburger::after {
     height: 1.5px;
     transform: rotate(90deg) translate(-16px);
+    -webkit-transform: rotate(90deg) translate(-16px);
 }
 
 .nav_open .hamburger {
     height: 1.5px;
     transform: rotate(-45deg) translate(-9px);
+    -webkit-transform: rotate(-45deg) translate(-9px);
+    ;
 }
 
 .nav_open .hamburger::before {

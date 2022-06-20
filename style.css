@@ -74,13 +74,15 @@
 
 .mobile_menu {
     border-top: 0.1rem solid gray;
-    display: none;
+    display: flex;
     flex-direction: column;
     position: absolute;
     width: 100%;
     align-items: center;
     justify-content: center;
     min-height: 210px;
+    -webkit-transform: scaleY(0%);
+    transform: scaleY(0%);
     transform-origin: top;
     background-color: var(--clr-black);
     color: white;
@@ -98,7 +100,8 @@
 }
 
 .menu {
-    display: flex;
+    -webkit-transform: scaleY(100%);
+    transform: scaleY(100%);
 }
 
 .nav_icon {
@@ -135,15 +138,15 @@
 
 .nav_open .hamburger::after {
     height: 1.5px;
-    transform: rotate(90deg) translate(-16px);
     -webkit-transform: rotate(90deg) translate(-16px);
+    transform: rotate(90deg) translate(-16px);
+
 }
 
 .nav_open .hamburger {
     height: 1.5px;
+   -webkit-transform: rotate(-45deg) translate(-9px);
     transform: rotate(-45deg) translate(-9px);
-    -webkit-transform: rotate(-45deg) translate(-9px);
-    ;
 }
 
 .nav_open .hamburger::before {

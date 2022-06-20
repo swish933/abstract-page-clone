@@ -73,13 +73,15 @@
 
 .mobile_menu {
     border-top: 0.1rem solid gray;
-    display: none;
+    display: flex;
     flex-direction: column;
     position: absolute;
     width: 100%;
     align-items: center;
     justify-content: center;
     min-height: 210px;
+    transform: scaleY(0);
+    -webkit-transform: scaleY(0);
     transform-origin: top;
     background-color: var(--clr-black);
     color: white;
@@ -97,7 +99,9 @@
 }
 
 .menu {
-    display: flex;
+    transform: scaleY(100%);
+    -webkit-transform: scaleY(100%);
+    -ms-transform: scaleY(100%);
 }
 
 .nav_icon {
